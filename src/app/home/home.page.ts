@@ -33,12 +33,17 @@ export class HomePage {
     this.itemList.splice(index,1)
     this.vibration.vibrate(1000);
   }
+  clearList(archiveList){
+    archiveList.splice(0,archiveList.length)
+  }
 
   addItem(itemForm){
     const obj = itemForm.value;
     if(obj.itemName !== ''){
       // todo code
       this.itemList.push(obj.itemName);
+      //reset form
+      itemForm.reset();
     }else{
       this.presentAlert()
     }

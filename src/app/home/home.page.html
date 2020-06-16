@@ -34,6 +34,10 @@
       <ion-label>
         Archive List
       </ion-label>
+      <ion-chip slot="end" (click)="clearList(archiveList)">
+        <ion-icon name= "close-circle-outline"></ion-icon>
+        <ion-label>Clear List</ion-label>
+      </ion-chip>
     </ion-item-divider>
     <ion-item *ngFor="let archivelist of archiveList">
       <ion-label>{{archivelist}}</ion-label>
