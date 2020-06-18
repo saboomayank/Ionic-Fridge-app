@@ -9,8 +9,8 @@ import { Vibration } from '@ionic-native/vibration/ngx';
 })
 export class HomePage {
 
-  itemList = ['bread','cake','milk']
-  archiveList = ['foo1','foo','bar']
+  itemList = []
+  archiveList = []
 
   constructor(private alertController:AlertController,private vibration: Vibration) {}
 
